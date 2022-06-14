@@ -189,7 +189,6 @@ footer {
     display: block;
   }
 }
-/
 /*formato contact*/
 .contact-grid {
   display: grid;
@@ -258,6 +257,10 @@ footer {
 }
 .deco div {
   margin: 10px;
+}
+#lambda img {
+  width: 200px;
+  height: auto;
 }
 @media screen and (min-width: 480px) and (max-width: 720px) {
   .deco {
