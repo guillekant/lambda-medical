@@ -14,10 +14,12 @@ header {
   align-items: center;
   font-size: small;
   font-style: normal white;
+  background: linear-gradient(to bottom, gray, white );
 }
 
 .logo {
-  margin: 0% auto;
+  border: 1px solid black;
+  margin: 1% auto;
 }
 
 .logo img {
@@ -187,43 +189,18 @@ footer {
     display: block;
   }
 }
-/*formato place*/
-.place-grid {
-  display: grid;
-  grid-template-rows: auto auto auto;
-}
-#lambda {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin: 20px;
-  text-align: center;
-}
-#lambda .sector {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  margin: 5px;
-}
-#lambda img {
-  width: 200px;
-  height: auto;
-}
+/
 /*formato contact*/
 .contact-grid {
   display: grid;
   grid-template-rows: auto auto;
-  align-items: center;
   grid-template-areas: "header" "form" "footer";
 }
 
 .contact {
+  padding: 10px;
   grid-area: form;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-inline: 20%;
+  margin: 5px; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -258,7 +235,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center;
   text-align: center;
 }
 #lambda {
@@ -276,7 +252,6 @@ footer {
 .deco {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
   align-content: center;
   align-items: center;
   justify-content: center;
