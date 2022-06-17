@@ -6,44 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAMBDA</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="index-grid">
-        <header>
-            <a href="index.html" class="logo">
-                <img src="./assets/img/logo.png" alt="logo">
-            </a>
-        </header>
-        <div class="window">
-            <ul>
-                <div class="window__button">
-                    <a href="./pag/staff.html" class="div">
-                        <p>PROFESIONALES</p>
-                    </a>
-                </div>
-                <div class="window__button">
-                    <a href="./pag/place.html">
-                        <p>INSTALACIONES</p>
-                    </a>
-                </div>
-                <div class="window__button">
-                    <a href="./pag/about.html">
-                        <p>ACERCA DE</p>
-                    </a>
-                </div>
-                <div class="window__button">
-                    <a href="./pag/contact.html">
-                        <p>CONTACTO</p>
-                    </a>
-                </div>
-            </ul>
+    <style>
+        #contenido{
+            height: 400px;
+        }
+    </style>
+    <div>
+        <div class="container justify-content-center align-items-center h-100">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col justify-content-center">
+                                <a class="nav-link" href="index.html">
+                                    <img src="./assets/img/logo.png" width="90" alt="">
+                                </a>
+                            </div>
+                            <div class="row text-center">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="./pag/staff.html">PROFESIONALES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pag/place.html">INSTALACIONES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pag/about.html">ACERCA</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pag/contact.html">CONTACTO</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <footer>
-            <p>
-                © XU SHULAN.WEB DEVELOPER
-            </p>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="contenido" class="p-5 text-center bg-image"
+                        style="background-image: url('https://www.igaleno.com/wp-content/uploads/2021/07/Diferencias-entre-centro-medico-y-clinica.jpg');">
+                        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="text-white">
+                                    <h1 class="mb-3">LAMBDA MEDICAL CENTER</h1>
+                                    <h5 class="mb-4">Hacemos lo que debemos porque podemos</h5>
+                                    <a class="btn btn-outline-light btn-lg m-2"
+                                        href="./pag/staff.html" role="button" rel="nofollow"
+                                        target="_blank">
+                                        PROFESIONALES
+                                    </a>
+                                    <a class="btn btn-outline-light btn-lg m-2"
+                                        href="./pag/place.html" role="button" rel="nofollow"
+                                        target="_blank">
+                                        INSTALACIONES
+                                    </a>
+                                    <a class="btn btn-outline-light btn-lg m-2"
+                                        href="./pag/about.html" role="button" rel="nofollow"
+                                        target="_blank">
+                                        ACERCA DE
+                                    </a>
+                                    <a class="btn btn-outline-light btn-lg m-2"
+                                        href="./pag/contact.html" target="_blank"
+                                        role="button">
+                                        CONTACTO
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col text-center">
+                    <p>
+                    © XU SHULAN.WEB DEVELOPER
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
         </footer>
     </div>
 </body>
