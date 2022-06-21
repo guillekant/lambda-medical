@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
 }
 /*formato header*/
 header {
@@ -14,7 +15,7 @@ header {
   align-items: center;
   font-size: small;
   font-style: normal white;
-  background: linear-gradient(to bottom, gray, white );
+  background: linear-gradient(to bottom, gray, white);
 }
 
 .logo {
@@ -30,9 +31,17 @@ header {
 .menu div {
   display: inline-flex;
   align-content: flex-end;
-  margin: 10px;
+  margin: 10px auto;
   padding: 5px;
   background-color: orangered;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.menu div:hover {
+  background-color: orange;
 }
 
 .menu a {
@@ -68,7 +77,7 @@ footer {
   grid-area: content;
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  margin: 5% auto;
   padding: auto;
   align-items: center;
 }
@@ -77,9 +86,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  margin: 20px;
+  margin: 20px auto;
   padding: 10px;
   background-color: orangered;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.window div:hover {
+  background-color: orange;
 }
 
 .window__button {
@@ -96,7 +114,7 @@ footer {
     zoom: 75%;
     justify-content: center;
     align-items: center;
-    margin: 20%;
+    margin: 20% auto;
   }
 }
 
@@ -112,14 +130,14 @@ footer {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 20px auto;
   text-align: center;
 }
 
 #about div {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 5px auto;
 }
 
 #about img {
@@ -132,7 +150,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  margin: 5px;
+  margin: 5px auto;
 }
 #about .text {
   margin-block: 30px;
@@ -161,7 +179,7 @@ footer {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 20px auto;
   text-align: center;
 }
 #staff .medic {
@@ -169,12 +187,25 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  margin: 5px;
+  margin: 5px auto;
 }
 #staff img {
   width: auto;
   height: 200px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
+#staff img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
 .staff_text {
   margin-inline: 20%;
 }
@@ -199,7 +230,7 @@ footer {
 .contact {
   padding: 10px;
   grid-area: form;
-  margin: 5px; 
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -231,13 +262,20 @@ footer {
 }
 /*formato place*/
 .place-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: "header" "lambda" "footer";
+}
+.place div {
+  margin: 10px;
+}
+#about div {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  text-align: center;
 }
 #lambda {
   margin-inline: 20%;
+  grid-area: lambda;
   display: flex;
   flex-direction: column;
   align-items: center;
