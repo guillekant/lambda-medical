@@ -1,0 +1,25 @@
+{
+  "name": "lambda2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" , 
+    "build-sass": "node-sass --include-path scss sass/style.scss css/estilo.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillekant/lambda-medical.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillekant/lambda-medical/issues"
+  },
+  "homepage": "https://github.com/guillekant/lambda-medical#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
